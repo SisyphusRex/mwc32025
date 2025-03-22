@@ -101,9 +101,9 @@ def main(*args):
             ##########################################################
             ui.print("Query single entry by criteria")
             single_employee_by_criteria = (
-                session.query(Employee)
+                session.query(ZipCode)
                 .filter(
-                    Employee.first_name == "Jean-Luc",
+                    Zipcode.zip_code == "49002",
                 )
                 .first()
             )
