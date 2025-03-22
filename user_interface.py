@@ -5,7 +5,7 @@ class UserInterface:
     """Class for doing all UI for program"""
 
     # Menu choices constant
-    MAX_MENU_CHOICES = 2
+    MAX_MENU_CHOICES = 7
 
     # No Constructor as we do not need to accept any parameters or set any
     # class level variables. But, this does not mean that we can't do that
@@ -35,30 +35,6 @@ class UserInterface:
         # 1 or 2. So, there is no need to put this in a try.
         return int(selection)
 
-    def print_list(self, output_list):
-        """Print list of employees"""
-        print()
-        print("Printing the List")
-        print(f"{'First Name':<10} {'Last Name':<20} {'Weekly Salary':>14}")
-        print(output_list)
-        print()
-        print()
-        print()
-
-    def print_entry(self, entry):
-        """print single entry"""
-        print()
-        print("Print a single entry")
-        print(f"{'First Name':<10} {'Last Name':<20} {'Weekly Salary':>14}")
-        print(entry)
-        print()
-        print()
-        print()
-
-    def print(self, value):
-        """print out passed value"""
-        print(value)
-
     def print_file_not_found_error(self):
         """Display file not found error"""
         print("ERROR: File not found for opening.")
@@ -72,8 +48,13 @@ class UserInterface:
     def _print_menu(self):
         """Print menu to user"""
         print("What would you like to do?")
-        print("1. Demo Database and Print List")
-        print("2. Exit")
+        print("1. Print zip codes by string relation")
+        print("2. Print 1 line by zip:")
+        print("3. Print All")
+        print("4. Print by state")
+        print("5. Calculate distance between zips")
+        print("6. Find all other zips in radius")
+        print("7. Map total distance betweeen series of zips")
         print()
         print()
 
