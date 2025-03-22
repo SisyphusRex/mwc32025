@@ -24,10 +24,10 @@ def create_database():
     Base.metadata.create_all(engine)
 
 
-def populate_database(employees):
+def populate_database(zip_codes):
     """populate database from list of employees"""
-    for employee in employees:
-        session.add(employee)
+    for zip_code in zip_codes:
+        session.add(zip_code)
         session.commit()
 
 
